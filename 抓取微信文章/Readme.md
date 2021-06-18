@@ -31,8 +31,8 @@ def get_detail(url):
         return None
 ```
 我直接把答案贴出来了
- 4. 后面的就是正常的分析和储存了
- 5. 注：只要拿到了微信本身的url，微信是没有爬虫的限制的
+4. 后面的就是正常的分析和储存了
+5. 注：只要拿到了微信本身的url，微信是没有爬虫的限制的
 
 ##  使用建议
  - 在本地部署proxypool 　https://github.com/Python3WebSpider/ProxyPool
