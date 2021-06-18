@@ -41,6 +41,7 @@ def login():
     jsonCookies = json.dumps(Cookies)
     with open("taobao_cookies.json", 'w') as f:
         f.write(jsonCookies)
+    browser.close()
 
 
 def cookie():

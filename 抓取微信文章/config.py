@@ -1,7 +1,7 @@
 import pymysql
 
 
-def mysqlConnection(host='47.99.140.252', user='hengyiS', passwd='y3PAh4CPzNmRZiDi', db='hengyi_service'):
+def mysqlConnection(host='#', user='#', passwd='#', db='#'):
     conn = pymysql.Connect(
         host=host,
         port=3306,
