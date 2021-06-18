@@ -138,10 +138,10 @@ def handle_result(res: list):
 
 
 def save_to_mysql(res):
-    news_1 = res[0]
-    news_2 = res[1]
-    now =search_time()
-    sql = f"INSERT INTO `hengyi_service`.`daily_news` (`date`, `num_1`, `num_2`, `num_3`, `num_4`, `num_5`, `num_6`, `num_7`, `num_8`, `num_9`, `num_10`, `num_11`, `num_12`, `num_13`, `num_14`, `num_15`, `num_16`, `num_17`, `num_18`, `num_19`, `num_20`, `num_21`, `num_22`, `num_23`, `num_24`) VALUES ('{now}', '{news_1[0]}', '{news_1[1]}', '{news_1[2]}', '{news_1[3]}', '{news_1[4]}', '{news_1[5]}', '{news_1[6]}', '{news_1[7]}', '{news_1[8]}', '{news_1[9]}', '{news_1[10]}', '{news_1[11]}', '{news_2[0]}', '{news_2[1]}', '{news_2[2]}', '{news_2[3]}', '{news_2[4]}', '{news_2[5]}', '{news_2[6]}', '{news_2[7]}', '{news_2[8]}', '{news_2[9]}', '{news_2[10]}', '{news_2[11]}')"
+    res = str(res).replace('[','').replace(']', '').replace('(', '').replace(')', '').replace("'", '').replace(" ", '').replace(",", '')
+    now =search_time()[:10]
+    print(res)
+    sql = f"INSERT INTO `hengyi_service`.`daily_news` (`date`, `content`) VALUES ('{now}', '{res}')"
     conn = mysqlConnection()
     cur = conn.cursor()
     cur.execute(sql)
@@ -166,5 +166,5 @@ def main(keyword, page, cookie):
 
 
 if __name__ == '__main__':
-    cookie_one = 'IPLOC=CN4401; SUID=02A2EC78374A910A0000000060C4B4F8; SUV=1623504119771992; ABTEST=8|1623504121|v1; weixinIndexVisited=1; ppinf=5|1623757982|1624967582|dHJ1c3Q6MToxfGNsaWVudGlkOjQ6MjAxN3x1bmlxbmFtZToxODolRTYlODElOTIlRTYlQUYlODV8Y3J0OjEwOjE2MjM3NTc5ODJ8cmVmbmljazoxODolRTYlODElOTIlRTYlQUYlODV8dXNlcmlkOjQ0Om85dDJsdUp6NHhVMGdVVW1ad0xwc3ZES2xHdm9Ad2VpeGluLnNvaHUuY29tfA; pprdig=xXJ8dwJX-d7kpfVUb-G5_LHJeknha--oX_2rNy17LQWbJ1dxNCX7wF89ZOW5l7L2HAhcBweQOURAmw3o5UmmV10ovram4LgQ9dPCEbxODzbGwpGEJMJ1L4XpSopb2KIsxREqDm299olSZ-s3CoMURbXIjMrP3B8Bn6vTBvNqgKc; ppinfo=fa4abf89cb; passport=5|1623757982|1624967582|dHJ1c3Q6MToxfGNsaWVudGlkOjQ6MjAxN3x1bmlxbmFtZToxODolRTYlODElOTIlRTYlQUYlODV8Y3J0OjEwOjE2MjM3NTc5ODJ8cmVmbmljazoxODolRTYlODElOTIlRTYlQUYlODV8dXNlcmlkOjQ0Om85dDJsdUp6NHhVMGdVVW1ad0xwc3ZES2xHdm9Ad2VpeGluLnNvaHUuY29tfA|a4347c7cf5|xXJ8dwJX-d7kpfVUb-G5_LHJeknha--oX_2rNy17LQWbJ1dxNCX7wF89ZOW5l7L2HAhcBweQOURAmw3o5UmmV10ovram4LgQ9dPCEbxODzbGwpGEJMJ1L4XpSopb2KIsxREqDm299olSZ-s3CoMURbXIjMrP3B8Bn6vTBvNqgKc; sgid=14-52771287-AWDIlJ4VBIA4wkjcv9dXFDE; SNUID=1ABBF461181CDCD4879BC8DA199F54AB; ld=nkllllllll2khGcQlllllpRw8AUlllllnsA80kllllGlllllRZlll5@@@@@@@@@@; LCLKINT=5577; LSTMV=294%2C155; ppmdig=16238368370000007f27d59ae365f472538120d7406eca0a'
+    cookie_one = '#'
     main('365简报', 1, cookie_one)
