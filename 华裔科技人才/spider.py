@@ -1,4 +1,4 @@
-from concurrent.futures import ThreadPoolExecutor, wait
+import time
 from urllib.parse import urlencode
 import openpyxl
 import xlrd
@@ -13,6 +13,11 @@ def find_all_index(arr, item):
         return -1
     else:
         return index[0]
+
+
+def log(text):
+    with open('log.txt', "a+") as f:
+        f.write(text)
 
 
 def get_info_excel(file):
@@ -32,7 +37,8 @@ def get_page(name):
     }
     name = str(urlencode(data)).split('=')[1]
     url = 'https://baike.baidu.com/item/' + name
-    # print(f"{original_name} : {url}")
+    localtime = str(time.asctime(time.localtime(time.time())))
+    log(f"对象名字：{original_name} :  采集地址{url}  采集时间：{localtime} \n")
     header = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36'
     }
