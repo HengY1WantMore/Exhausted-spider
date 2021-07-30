@@ -1,0 +1,19 @@
+1. 谷歌搜索xx
+2. 将前3个链接筛选出来 记录
+3. 人工筛选官方地址
+4. 请求官方地址 
+5. 正则含有logo的div
+6. 取div中img的地址
+7. 将图片地址保存下载下来筛选
+8. 将图片地址转为base64保存
+
+
+参考：
+https://blog.csdn.net/iefenghao/article/details/88836303
+https://blog.csdn.net/oneil2016/article/details/51837627
+https://blog.csdn.net/xnlay/article/details/79048508
+https://www.cnblogs.com/suiyueshentou/p/7798340.html
+https://blog.csdn.net/zuoguaishouxiao/article/details/106142955
+https://blog.csdn.net/a497785609/article/details/77944327
+https://blog.csdn.net/weixin_44513679/article/details/116142001
+https://blog.csdn.net/deyafoo/article/details/105243894
