@@ -5,7 +5,8 @@ from selenium.webdriver.support import expected_conditions as Ec
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
-browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
+# browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
+browser = webdriver.Chrome()
 wait = WebDriverWait(browser, 10)
 
 
@@ -56,8 +57,8 @@ if __name__ == "__main__":
     # for index, one in name:
     #     log('record.txt', f"第{index+848}个\n")
     #     get_info(one)
-    for index, one in name:
-        log('info2.txt', f"第{index}个 {one} \n")
-        log('info2.txt', '\n')
-        log('info2.txt', '############### \n')
+    # for index, one in name:
+    #     log('info2.txt', f"第{index}个 {one} \n")
+    #     log('info2.txt', '\n')
+    #     log('info2.txt', '############### \n')
 
