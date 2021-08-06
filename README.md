@@ -7,13 +7,24 @@
 
 ***
 # 目录
- - [模拟浏览器抓取淘宝](https://github.com/hengyi666/Exhausted-spider/tree/main/selenium%E7%88%AC%E5%8F%96%E6%B7%98%E5%AE%9D%E7%BE%8E%E9%A3%9F)
- - [抓取今日头条](https://github.com/hengyi666/Exhausted-spider/tree/main/%E5%88%86%E6%9E%90Ajax%E8%AF%B7%E6%B1%82%E5%B9%B6%E6%8A%93%E5%8F%96%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1%E8%A1%97%E6%8B%8D%E7%BE%8E%E5%9B%BE)
+ - [模拟浏览器抓取淘宝](https://github.com/hengyi666/Exhausted-spider/tree/main/%E6%A8%A1%E6%8B%9F%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8A%93%E5%8F%96%E6%B7%98%E5%AE%9D)
+ - [抓取今日头条](https://github.com/hengyi666/Exhausted-spider/tree/main/%E6%8A%93%E5%8F%96%E4%BB%8A%E6%97%A5%E5%A4%B4%E6%9D%A1)
  - [抓取微信文章](https://github.com/hengyi666/Exhausted-spider/tree/main/%E5%BE%AE%E4%BF%A1%E5%8F%8D%E7%88%AC%E8%99%AB)
- - [爬取每日简报](https://github.com/hengyi666/Exhausted-spider/tree/main/%E6%AF%8F%E6%97%A5%E7%AE%80%E6%8A%A5)
- - [抓取猫眼电影Top100](https://github.com/hengyi666/Exhausted-spider/tree/main/%E7%88%AC%E5%8F%96%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1)
+ - [爬取每日简报](https://github.com/hengyi666/Exhausted-spider/tree/main/%E6%8A%93%E5%8F%96%E6%AF%8F%E6%97%A5%E7%AE%80%E6%8A%A5)
+ - [抓取猫眼电影Top100](https://github.com/hengyi666/Exhausted-spider/tree/main/%E6%8A%93%E5%8F%96%E7%8C%AB%E7%9C%BC%E7%94%B5%E5%BD%B1Top100)
+ - [模拟浏览器谷歌搜索页面](https://github.com/hengyi666/Exhausted-spider/tree/main/%E6%A8%A1%E6%8B%9F%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B0%B7%E6%AD%8C%E6%90%9C%E7%B4%A2%E9%A1%B5%E9%9D%A2)
+ - [百度百科搜索](https://github.com/hengyi666/Exhausted-spider/tree/main/%E7%99%BE%E5%BA%A6%E7%99%BE%E7%A7%91%E6%90%9C%E7%B4%A2)
+ - [维基百科搜索](https://github.com/hengyi666/Exhausted-spider/tree/main/%E7%BB%B4%E5%9F%BA%E7%99%BE%E7%A7%91%E6%90%9C%E7%B4%A2)
 
 #  拓展
  - 代理池  https://github.com/Python3WebSpider/ProxyPool
- -  requirements.txt  我把我所有的库都打包了  pip install -r requirements.txt
- 
+
+ - 繁体字-简体字互相转换 https://github.com/skydark/nstools/tree/master/zhtools
+
+ - requirements.txt  我把我所有的库都打包了
+
+   ```python
+    pip install -r requirements.txt
+   ```
+
+   
