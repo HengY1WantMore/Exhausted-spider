@@ -1,6 +1,5 @@
 import random
 from urllib.parse import urlencode
-
 import openpyxl
 import requests
 import xlrd
@@ -10,13 +9,22 @@ from langconv import *
 max_times = 5
 
 
-# 日志记录
+# @description: txt记录
+# @Author: Hengyi
+# @Date: 2021/8/6
+# @Param: location:相对或者绝对位置
+# @Param: text:记录的内容
 def log(location, text):
     with open(location, "a+", encoding='utf-8') as f:
         f.write(text)
 
 
-# 获取数据
+# @description: 读取excel文件内容
+# @Author: Hengyi
+# @Date: 2021/8/6
+# @Param: file:相对或者绝对的excel文件
+# @Param: col:列
+# @Return: res:array
 def get_info_excel(file, col):
     res = []
     wb = xlrd.open_workbook(filename=file)  # 打开文件
@@ -27,12 +35,21 @@ def get_info_excel(file, col):
     return res
 
 
-# 处理书名号
-def handleName(one):
+# @description: 处理书名号
+# @Author: Hengyi
+# @Date: 2021/8/6
+# @Param: one:文本
+# @Return: res:array
+def handle_symbol(one):
     return one.replace('《', '').replace('》', '')
 
 
-# 进行维基百科的请求
+# @description: 进行维基百科请求
+# @Author: Hengyi
+# @Date: 2021/8/6
+# @Param: index:编号
+# @Param: one:内容
+# @Return: str
 def get_page(index, one, times=1):
     if times >= max_times:
         log('record.txt', f"Error! {one} 脚本无法请求 \n")
@@ -61,8 +78,12 @@ def get_page(index, one, times=1):
         return get_page(original_name, times)
 
 
-# 分析页面
-def parse_page(page, name):
+# @description: 分析页面
+# @Author: Hengyi
+# @Date: 2021/8/6
+# @Param: page:网页内容
+# @Return: array
+def parse_page(page):
     try:
         doc = pq(page)
         directory_info = doc('.toc').text().replace('\n', ' ')
@@ -74,7 +95,11 @@ def parse_page(page, name):
         return [labels, directory_info]
 
 
-# 处理每行字数
+# @description: 处理每一行字数（防止记录一行字数过多）
+# @Author: Hengyi
+# @Date: 2021/8/6
+# @Param: text:内容
+# @Return: string
 def handleNum(text):
     text = str(text)
     a = 0
@@ -91,7 +116,11 @@ def handleNum(text):
     return res
 
 
-# 处理文字
+# @description: 处理繁体字转简体字
+# @Author: Hengyi
+# @Date: 2021/8/6
+# @Param: sentence:内容
+# @Return: string
 def handleText(sentence):
     res = []
     for x in sentence:
@@ -100,7 +129,11 @@ def handleText(sentence):
     return res
 
 
-# 处理注释
+# @description: 处理标注
+# @Author: Hengyi
+# @Date: 2021/8/6
+# @Param: text:内容
+# @Return: string
 def handleAnnotation(text):
     text = text.replace('[1]', '')
     text = text.replace('[2]', '')
@@ -116,7 +149,12 @@ def handleAnnotation(text):
     return text
 
 
-# 写入数据
+# @description: 写入excel文件中
+# @Author: Hengyi
+# @Date: 2021/8/6
+# @Param: index: 编号（写入是从1开始）
+# @Param: res: 内容
+# @Param: col: 第几行
 def write_excel(res, col):
     workbook = openpyxl.load_workbook("aim_test.xlsx")
     worksheet = workbook.worksheets[0]
@@ -127,7 +165,7 @@ def write_excel(res, col):
 
 if __name__ == "__main__":
     file = 'aim_test.xlsx'
-    name = enumerate(list(map(handleName, get_info_excel(file, 3))))
+    name = enumerate(list(map(handle_symbol, get_info_excel(file, 3))))
     one = get_info_excel(file, 45)
     two = get_info_excel(file, 46)
     one = handleText(one)
