@@ -1,11 +1,14 @@
 import base64
 import os
 import re
-
+import time
+from urllib.parse import urlencode
+from selenium import webdriver
+from selenium.webdriver.support.wait import WebDriverWait
 import openpyxl
 import xlrd
-
 from 维基百科搜索.langconv import Converter
+from flashtext import KeywordProcessor
 
 '''
 公共库
@@ -160,3 +163,37 @@ def handleAnnotation(text):
     text = text.replace('[10]', '')
     text = text.replace('[11]', '')
     return text
+
+
+# @description: 谷歌请求某页面中含有的链接
+# @Author: Hengyi
+# @Date: 2021/8/7
+# @Param: want:搜索内容
+# @return array
+def get_info(want):
+    browser = webdriver.Chrome()
+    wait = WebDriverWait(browser, 10)
+    res = []
+    data = {'keyword': want}
+    one = str(urlencode(data)).split('=')[1]
+    browser.get('https://www.google.com.hk/search?q=' + one)
+    time.sleep(2)  # 2秒的休眠给网络一个缓冲时间
+    text = browser.find_elements_by_xpath("//a")
+    for each in text:
+        url = each.get_attribute("href")
+        if not bool(re.search('google', str(url))) and url is not None:
+            res.append(url)
+    return res
+
+
+# @description: 在该网页的源码中寻找是否存在关键字
+# @Author: Hengyi
+# @Date: 2021/8/7
+# @Param: page:网页内容
+# @Param: key:关键字
+# @Return: array
+def parse_page(page, key):
+    keyword_processor = KeywordProcessor()
+    keyword_processor.add_keyword(key)
+    keywords_found = keyword_processor.extract_keywords(str(page))
+    return keywords_found
