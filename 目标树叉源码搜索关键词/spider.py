@@ -4,6 +4,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from urllib.parse import urlencode
 import requests
 import time
+from tqdm import tqdm
 from flashtext import KeywordProcessor
 
 
@@ -149,24 +150,28 @@ def get_page_info(page_url, type=1, key='logo'):
 
 
 if __name__ == '__main__':
-    want = '纽约华商'  # 可以是个数组进行for循环
     key = 'logo'
-    url = get_info(want)[:5]
-    log('./record.txt', f"请求的关键词为：{want}\n")
-    for each in url:
-        page = get_each_page(each, 1)  # 通过request来请求网页源代码 第二个参数默认是关闭了代理
-        if page == -1:  # js动态渲染/无法请求
-            print(f"{each} 为js动态渲染/无法请求")
-            res_url = get_page_info(each, 1, key)  # 这里设置的是寻找关键词
-        else:
-            res_url = parse_page(page, key)
-        if not res_url:
-            print(f"不存在匹配内容于中{each}")
-        elif res_url == -1:
-            print(f"请求错误：{each}")
-        else:
-            print(f"**获取到 {each} 中存在关键字**")
-            log('./record.txt', f"获取到 {each} 中存在关键字\n")
-    log('./record.txt', f"#######################################\n")
+    want_list = ['纽约华商', '淘宝']
+    for want in want_list:
+        print(f"请求的关键词为：{want}")
+        log('./record.txt', f"请求的关键词为：{want}\n")
+        url = get_info(want)[:5]
+        for each in tqdm(url):
+            page = get_each_page(each, 1)  # 通过request来请求网页源代码 第二个参数默认是关闭了代理
+            if page == -1:  # js动态渲染/无法请求
+                # print(f"{each} 为js动态渲染/无法请求")
+                res_url = get_page_info(each, 1, key)  # 这里设置的是寻找关键词
+            else:
+                res_url = parse_page(page, key)
+            if not res_url:
+                # print(f"不存在匹配内容于中{each}")
+                continue
+            elif res_url == -1:
+                # print(f"请求错误：{each}")
+                continue
+            else:
+                # print(f"**获取到 {each} 中存在关键字**")
+                log('./record.txt', f"获取到 {each} 中存在关键字\n")
+        log('./record.txt', f"#######################################\n")
     browser.quit()
     exit()
