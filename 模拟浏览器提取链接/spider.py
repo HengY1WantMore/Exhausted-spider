@@ -74,10 +74,10 @@ def get_each_page(url_want, isOpen=0, times=1):
     }
     try:
         if isOpen == 1:
-            if bool(re.search('http', str(url_want))):  # 则是http请求
-                proxies = {'http': 'http://127.0.0.1:7890'}
-            else:
+            if bool(re.search('https', str(url))):  # 则是https请求
                 proxies = {'https': 'http://127.0.0.1:7890'}
+            else:
+                proxies = {'http': 'http://127.0.0.1:7890'}
             response = requests.get(url_want, proxies=proxies, headers=header)  # 使用代理
         else:
             response = requests.get(url_want, headers=header, timeout=5)

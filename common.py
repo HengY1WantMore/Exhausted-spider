@@ -58,13 +58,13 @@ def match_url(info):
 # @Author: Hengyi
 # @Date: 2021/8/6
 # @Param: location:文本相对位置或者绝对位置
-# @Param: num:例如所有的3的倍数
+# @Param: multiple:例如所有的3的倍数
 # @Return: array
-def get_multiple_num(location, num):
+def get_multiple_num(location, multiple):
     res = []
     with open(location, 'r', encoding='utf-8') as f:
         for num, line in enumerate(f):
-            if (num - 1) % 3 == 0:
+            if (num - 1) % multiple == 0:
                 line = line.replace('\n', '')
                 res.append(line)
     return res

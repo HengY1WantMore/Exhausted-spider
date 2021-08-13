@@ -1,12 +1,17 @@
 import re
 import time
 from urllib.parse import urlencode
+import requests
 import xlrd
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
+import os
+import shutil
+from tqdm import tqdm
 
-browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
-# browser = webdriver.Chrome()
+
+# browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
+browser = webdriver.Chrome()
 wait = WebDriverWait(browser, 10)
 
 
@@ -67,14 +72,80 @@ def get_info(want):
     log('record.txt', '################################################################## \n')
 
 
+# @description: 获取文本某一倍数行的内容
+# @Author: Hengyi
+# @Date: 2021/8/6
+# @Param: location:文本相对位置或者绝对位置
+# @Param: multiple:例如所有的3的倍数
+# @Return: array
+def get_multiple_num(location, multiple):
+    res = []
+    with open(location, 'r', encoding='utf-8') as f:
+        for num, line in enumerate(f):
+            if (num - 1) % multiple == 0:
+                line = line.replace('\n', '')
+                res.append(line)
+    return res
+
+
+# @description: 请求链接保存为指定图片
+# @Author: Hengyi
+# @Date: 2021/8/11
+# @Param: url:请求链接
+# @Param: name:想保存的名字
+def urllib_download(url, name):
+    try:
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36'
+        }
+        if bool(re.search('https', str(url))):  # 则是https请求
+            proxies = {'https': 'http://127.0.0.1:7890'}
+        else:
+            proxies = {'http': 'http://127.0.0.1:7890'}
+        r = requests.get(url, proxies=proxies, headers=headers, timeout=4)
+        if r.status_code == 200:
+            with open(f"./img/{name}.jpg", 'wb') as f:
+                f.write(r.content)
+
+        else:
+            log('./error.txt', f"{url}\n")
+    except Exception as e:
+        log('./error.txt', f"{url}\n")
+
+
 if __name__ == "__main__":
-    file = 'aim_test.xlsx'
-    name = enumerate(get_info_excel(file, 1))
-    country = get_info_excel(file, 8)
+    # file = 'aim_test.xlsx'
+    # name = enumerate(get_info_excel(file, 1))
+    # country = get_info_excel(file, 8)
     # for index, info in name:
     #     info = '华商 ' + country[index] + ' ' + info
     #     get_info(info)
-    for index, info in name:
-        log('./info.txt', f"{index} {info}{country[index]} 华商\n")
+    # for index, info in name:
+    #     log('./info.txt', f"{index} {info}{country[index]} 华商\n")
+
+    # res_list = get_multiple_num('./info.txt', 1)
+    # res_effective = []
+    # for x in res_list:
+    #     x = x.split(' ')
+    #     if len(x) == 4:
+    #         res_effective.append([x[0], x[3]])
+    # for index, url in tqdm(res_effective):
+    #     urllib_download(url, index)
+
+    filelist = os.listdir('./img')
+    print(filelist)
+    for files in filelist:
+        filename1 = os.path.splitext(files)[1]  # 读取文件后缀名
+        filename0 = os.path.splitext(files)[0]  # 读取文件名
+        print(filename0)
+        new_name = str(int(filename0) + 1400)
+        old_one = os.path.join('./img', files)
+        new_one = './img' + new_name + filename1
+        shutil.move(old_one, new_one)
+    print('mission over')
+
+
+
+
 
 
