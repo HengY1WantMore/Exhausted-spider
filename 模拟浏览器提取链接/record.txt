@@ -1,9 +1,0 @@
-请求的关键词为：纽约华商
-获取到 https://www.cbany.org/ 中存在关键字
-#######################################
-请求的关键词为：淘宝
-获取到 https://www.taobao.com/ 中存在关键字
-获取到 https://world.taobao.com/ 中存在关键字
-获取到 https://www.taobao.com/home.php 中存在关键字
-获取到 https://www.taobao.com/list/product/%E6%B7%98%E5%AE%9D%E7%BD%91%E9%A6%96%E9%A1%B5%E9%A6%96%E9%A1%B5.htm 中存在关键字
-#######################################

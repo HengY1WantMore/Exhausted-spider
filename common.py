@@ -7,7 +7,8 @@ from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 import openpyxl
 import xlrd
-from 维基百科搜索.langconv import Converter
+import requests
+# from tool.font.langconv import Converter
 from flashtext import KeywordProcessor
 
 '''
@@ -197,3 +198,42 @@ def parse_page(page, key):
     keyword_processor.add_keyword(key)
     keywords_found = keyword_processor.extract_keywords(str(page))
     return keywords_found
+
+
+# @description: 请求链接保存为指定图片
+# @Author: Hengyi
+# @Date: 2021/8/11
+# @Param: url:请求链接
+# @Param: name:想保存的名字
+def urllib_download(url, name):
+    try:
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36'
+        }
+        if bool(re.search('https', str(url))):  # 则是https请求
+            proxies = {'https': 'http://127.0.0.1:7890'}
+        else:
+            proxies = {'http': 'http://127.0.0.1:7890'}
+        r = requests.get(url, proxies=proxies, headers=headers, timeout=4)
+        if r.status_code == 200:
+            with open(f"./img/{name}.jpg", 'wb') as f:
+                f.write(r.content)
+
+        else:
+            log('./error.txt', f"{url}\n")
+    except Exception as e:
+        log('./error.txt', f"{url}\n")
+
+
+# @description: 分析页面是不是js渲染
+# @Author: Hengyi
+# @Date: 2021/8/7
+# @Param: text:网页内容
+# @Return: boolean
+def judge_js(text):
+    judge_fun = bool(re.search('function', str(text)))
+    judge_p = bool(re.search('<p>', str(text)))
+    if judge_fun and not judge_p:
+        return True
+    else:
+        return False
