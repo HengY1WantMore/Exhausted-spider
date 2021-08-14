@@ -13,6 +13,7 @@
 ### 前言：
 
 > 为了将每个demo联系起来，采用了仿AOP分层架构，进行了面向对象的再次加工。
+> 
 > 可以将整个项目克隆下来，然后在对应的层直接进行操作。
 
 ### 架构
@@ -20,7 +21,7 @@
 - [业务层](https://github.com/hengyi666/Exhausted-spider/tree/main/control)
   - 华文处理logo与英文
   - ...
-- 数据层
+- [数据层](https://github.com/hengyi666/Exhausted-spider/tree/main/data)
   - 华文处理logo与英文
   - ...
 - [实例层](https://github.com/hengyi666/Exhausted-spider/tree/main/demo)
