@@ -9,8 +9,8 @@ from common import log
 from common import judge_js
 from flashtext import KeywordProcessor
 
-# browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
-browser = webdriver.Chrome()
+browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
+# browser = webdriver.Chrome()
 wait = WebDriverWait(browser, 10)
 
 
@@ -101,7 +101,7 @@ class Selenium:
             res = self.get_each_page(url_handle)
             if res:
                 log('./record.txt', f"获取到 {url_handle} 中存在关键字:{self.want}\n")
-        log('./record.txt', f"##########################################")
+        log('./record.txt', f"##########################################\n")
 
 
 if __name__ == '__main__':
