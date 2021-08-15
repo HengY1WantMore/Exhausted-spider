@@ -218,7 +218,6 @@ def urllib_download(url, name):
         if r.status_code == 200:
             with open(f"./img/{name}.jpg", 'wb') as f:
                 f.write(r.content)
-
         else:
             log('./error.txt', f"{url}\n")
     except Exception as e:

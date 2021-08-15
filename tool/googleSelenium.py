@@ -9,8 +9,8 @@ from common import log
 from common import judge_js
 from flashtext import KeywordProcessor
 
-browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
-# browser = webdriver.Chrome()
+# browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
+browser = webdriver.Chrome()
 wait = WebDriverWait(browser, 10)
 
 
@@ -30,7 +30,7 @@ class Selenium:
         for x in p:
             content = str(str(x.text).split('\n')).replace('\'', '')
             url = match_url(content)
-            log('./record.txt', f"该网址为：{url} 详细信息为：{content}")
+            log('./record.txt', f"该网址为：{url} 详细信息为：{content}\n")
         return True
 
     def get_url_info(self):  # 谷歌搜索页面存在的有效链接
@@ -48,7 +48,7 @@ class Selenium:
 
     def get_each_page(self, url_want, times=1):  # 获取每一页的源码
         if times == self.max_times:
-            log('./error.txt', f"{url_want} 无法请求")
+            log('./error.txt', f"{url_want} 无法请求\n")
             return False
         header = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36'
@@ -69,7 +69,7 @@ class Selenium:
                 else:
                     return self.parse_page(response.text)
             else:
-                log('./error.txt', f"请求非200：{url_want}")
+                log('./error.txt', f"请求非200：{url_want}\n")
                 return False
         except Exception as e:
             times += 1
@@ -91,7 +91,7 @@ class Selenium:
             text = browser.page_source
             return self.parse_page(text)
         except Exception as e:
-            log('./error.txt', f"处理js渲染的链接错误：{page_url}")
+            log('./error.txt', f"处理js渲染的链接错误：{page_url}\n")
             return False
 
     def main_operation(self):
