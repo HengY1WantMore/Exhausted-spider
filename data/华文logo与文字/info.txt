@@ -98,106 +98,106 @@
 下标为：97，名字为：韩国-大邱庆北华侨华人联合会 英文名字为: 1 logo地址: 1
 下标为：98，名字为：德国易北中文协会 英文名字为: 1 logo地址: 1
 下标为：99，名字为：泰中文化慈善基金会 英文名字为: 1 logo地址: http://www.ffccent.com/images/logo_30.png
-下标为：100，名字为：西日本华文教育者协会 英文名字为: logo地址: 
-下标为：101，名字为：加拿大BC省中文协会 英文名字为: logo地址: 
-下标为：102，名字为：加拿大中国商会汉学推广委员会 英文名字为: logo地址: 
-下标为：103，名字为：法国新侨协会 英文名字为: logo地址: 
-下标为：104，名字为：中巴教育文化中心 英文名字为: logo地址: 
-下标为：105，名字为：瑞士伯尔尼华夏中文学校 英文名字为: logo地址: 
-下标为：106，名字为：艺诺中华语言文化中心 英文名字为: logo地址: 
-下标为：107，名字为：圣马丁中文学校 英文名字为: logo地址: 
-下标为：108，名字为：意大利罗马中华语言学校 英文名字为: logo地址: 
-下标为：109，名字为：横滨山手中华学校 英文名字为: logo地址: 
-下标为：110，名字为：国际青少年协会酷巴娃学园 英文名字为: logo地址: 
-下标为：111，名字为：明德学校 英文名字为: logo地址: 
-下标为：112，名字为：澳大利亚西爱坪中文学校 英文名字为: logo地址: 
-下标为：113，名字为：加拿大萨城育才学校 英文名字为: logo地址: 
-下标为：114，名字为：巴塞罗那孔子文化学校 英文名字为: logo地址: 
-下标为：115，名字为：俄罗斯国际中文学校 英文名字为: logo地址: 
-下标为：116，名字为：华夏奔腾中文学校 英文名字为: logo地址: 
-下标为：117，名字为：新金山中文学校 英文名字为: logo地址: 
-下标为：118，名字为：开普敦中国国际学校 英文名字为: logo地址: 
-下标为：119，名字为：博茨瓦纳华文教育辅导中心 英文名字为: logo地址: 
-下标为：120，名字为：里斯本中文学校 英文名字为: logo地址: 
-下标为：121，名字为：西班牙华商中文学校 英文名字为: logo地址: 
-下标为：122，名字为：澳大利亚北大中文学校 英文名字为: logo地址: 
-下标为：123，名字为：中韩子女教育协会 英文名字为: logo地址: 
-下标为：124，名字为：琴童乐团 英文名字为: logo地址: 
-下标为：125，名字为：斯图加特汉语学校 英文名字为: logo地址: 
-下标为：126，名字为：代尔夫特中文学校 英文名字为: logo地址: 
-下标为：127，名字为：马德里华苑中文学校 英文名字为: logo地址: 
-下标为：128，名字为：热那亚文化宫语言文化艺术中心 英文名字为: logo地址: 
-下标为：129，名字为：中哥文化教育中心 英文名字为: logo地址: 
-下标为：130，名字为：德智国际语言学校 英文名字为: logo地址: 
-下标为：131，名字为：菲律宾侨中学院 英文名字为: logo地址: 
-下标为：132，名字为：美国行知教育中文学堂 英文名字为: logo地址: 
-下标为：133，名字为：国际教育文化交流学院 英文名字为: logo地址: 
-下标为：134，名字为：菲律濱晨光中學 英文名字为: logo地址: 
-下标为：135，名字为：奥克兰华人教育中心 英文名字为: logo地址: 
-下标为：136，名字为：桥梁语言学校 英文名字为: logo地址: 
-下标为：137，名字为：新西兰N立方教育 英文名字为: logo地址: 
-下标为：138，名字为：西班牙爱华中文学校 英文名字为: logo地址: 
-下标为：139，名字为：犹他州东方中文学校 英文名字为: logo地址: 
-下标为：140，名字为：印尼华文教育联合总会 英文名字为: logo地址: 
-下标为：141，名字为：加拿大前景中文学校 英文名字为: logo地址: 
-下标为：142，名字为：马德里育才现代汉语学校 英文名字为: logo地址: 
-下标为：143，名字为：華學園 英文名字为: logo地址: 
-下标为：144，名字为：快乐宝贝学校 英文名字为: logo地址: 
-下标为：145，名字为：比利时欧华汉语语言学校 英文名字为: logo地址: 
-下标为：146，名字为：伦敦普通话简体字学校 英文名字为: logo地址: 
-下标为：147，名字为：匈牙利唐人街华文学校 英文名字为: logo地址: 
-下标为：148，名字为：荷兰弗里斯兰中文学校 英文名字为: logo地址: 
-下标为：149，名字为：千叶县我孙子市若松华文校 英文名字为: logo地址: 
-下标为：150，名字为：雙溪嶺中嶺學校 英文名字为: logo地址: 
-下标为：151，名字为：韩国-中国传统文化艺术学院 英文名字为: logo地址: 
-下标为：152，名字为：克利夫兰当代中文学校 英文名字为: logo地址: 
-下标为：153，名字为：菲律宾黄炎培职业教育学院 英文名字为: logo地址: 
-下标为：154，名字为：法国小熊猫学校 英文名字为: logo地址: 
-下标为：155，名字为：花漾汉语 英文名字为: logo地址: 
-下标为：156，名字为：优实国际中文学校 英文名字为: logo地址: 
-下标为：157，名字为：西班牙博思语言学校 英文名字为: logo地址: 
-下标为：158，名字为：大分中文学园 英文名字为: logo地址: 
-下标为：159，名字为：缅甸曼德勒福庆语言电脑学校 英文名字为: logo地址: 
-下标为：160，名字为：海尔布隆中文学校 英文名字为: logo地址: 
-下标为：161，名字为：柬埔寨金边公立崇正学校 英文名字为: logo地址: 
-下标为：162，名字为：睦新中文学校 英文名字为: logo地址: 
-下标为：163，名字为：大成中文学院 英文名字为: logo地址: 
-下标为：164，名字为：泰国瓦拉亚隆宫皇家大学 一带一路学院 英文名字为: logo地址: 
-下标为：165，名字为：安华中文学校 英文名字为: logo地址: 
-下标为：166，名字为：中巴教育与商贸 英文名字为: logo地址: 
-下标为：167，名字为：普华三语学校 英文名字为: logo地址: 
-下标为：168，名字为：意大利树人国际教育 英文名字为: logo地址: 
-下标为：169，名字为：缅甸国际教育中心（MIEC） 英文名字为: logo地址: 
-下标为：170，名字为：新华学校 英文名字为: logo地址: 
-下标为：171，名字为：拉省中华会馆中文学校 英文名字为: logo地址: 
-下标为：172，名字为：美洲中华中学校 英文名字为: logo地址: 
-下标为：173，名字为：澳大利亚布里斯本中文学校 英文名字为: logo地址: 
-下标为：174，名字为：新西兰阳光中文学校 英文名字为: logo地址: 
-下标为：175，名字为：新东方中文艺术学院 英文名字为: logo地址: 
-下标为：176，名字为：拓广中文补习班 英文名字为: logo地址: 
-下标为：177，名字为：德国易北中文学校 英文名字为: logo地址: 
-下标为：178，名字为：俄罗斯华星&诚信华文学校 英文名字为: logo地址: 
-下标为：179，名字为：广肇学校 英文名字为: logo地址: 
-下标为：180，名字为：瑞士日内瓦华文教育基金会 英文名字为: logo地址: 
-下标为：181，名字为：德国科隆莱茵中原学院 英文名字为: logo地址: 
-下标为：182，名字为：卡尔斯鲁厄中国文化语言学校 英文名字为: logo地址: 
-下标为：183，名字为：旅蒙华侨蒙中友谊学校 英文名字为: logo地址: 
-下标为：184，名字为：咏恩中文学校 英文名字为: logo地址: 
-下标为：185，名字为：缅甸云华师范学院 英文名字为: logo地址: 
-下标为：186，名字为：北美青少年联合会 英文名字为: logo地址: 
-下标为：187，名字为：曼德勒育才学校 英文名字为: logo地址: 
-下标为：188，名字为：西班牙马塔罗纺织中文学校 英文名字为: logo地址: 
-下标为：189，名字为：荷兰安多芬中文学校 英文名字为: logo地址: 
-下标为：190，名字为：维也纳中文教育中心 英文名字为: logo地址: 
-下标为：191，名字为：泰國美賽華雲學校 英文名字为: logo地址: 
-下标为：192，名字为：小太阳三语学校 英文名字为: logo地址: 
-下标为：193，名字为：爱尔兰华夏博文文化艺术中心 英文名字为: logo地址: 
-下标为：194，名字为：新苗文体学校 英文名字为: logo地址: 
-下标为：195，名字为：挪威Lucyya中文学校 英文名字为: logo地址: 
-下标为：196，名字为：英国依岭中文学校 英文名字为: logo地址: 
-下标为：197，名字为：雨虹汉学院 英文名字为: logo地址: 
-下标为：198，名字为：新中三语学校 英文名字为: logo地址: 
-下标为：199，名字为：陶华教育慈善学校 英文名字为: logo地址: 
+下标为：100，名字为：西日本华文教育者协会 英文名字为: 1 logo地址: 1
+下标为：101，名字为：加拿大BC省中文协会 英文名字为: 1 logo地址: 1
+下标为：102，名字为：加拿大中国商会汉学推广委员会 英文名字为: 1 logo地址: 1
+下标为：103，名字为：法国新侨协会 英文名字为: 1 logo地址: 1
+下标为：104，名字为：中巴教育文化中心 英文名字为: Ibrachina logo地址: https://ibrachina.com.br/wp-content/uploads/2019/07/ibrachina-logo-novo.png
+下标为：105，名字为：瑞士伯尔尼华夏中文学校 英文名字为: Huaxia_Chinese_School_Bern logo地址: https://image.jimcdn.com/app/cms/image/transf/dimension=624x10000:format=png/path/sb86b4960d703262c/image/i9471a3ed05db853e/version/1558819618/image.png
+下标为：106，名字为：艺诺中华语言文化中心 英文名字为: 1 logo地址: 1
+下标为：107，名字为：圣马丁中文学校 英文名字为: 1 logo地址: 1
+下标为：108，名字为：意大利罗马中华语言学校 英文名字为: 1 logo地址: 1
+下标为：109，名字为：横滨山手中华学校 英文名字为: 1 logo地址: https://bkimg.cdn.bcebos.com/pic/b151f8198618367a99f780fe2e738bd4b31ce593?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto
+下标为：110，名字为：国际青少年协会酷巴娃学园 英文名字为: 1 logo地址: 1
+下标为：111，名字为：明德学校 英文名字为: Shenzhen_Mingde_Experimental_School logo地址: https://www.mingdeschool.org/images/mdsy20190922_index1.jpg
+下标为：112，名字为：澳大利亚西爱坪中文学校 英文名字为: 1 logo地址: 1
+下标为：113，名字为：加拿大萨城育才学校 英文名字为: Bright_Horizons_Chinese_school logo地址: 1
+下标为：114，名字为：巴塞罗那孔子文化学校 英文名字为: Centre_Cultural_Confuci logo地址: http://kongzi.es/files/includes/images/xwp-content-uploads-2013-12-logo.png.pagespeed.ic.bbPisimdWr.webp
+下标为：115，名字为：俄罗斯国际中文学校 英文名字为: 1 logo地址: https://att.huarenjie.com/attachment/information/20200907/1599427107935141.jpg
+下标为：116，名字为：华夏奔腾中文学校 英文名字为: MORRIS_CHINESE_ACADEMY logo地址: https://www.mcanjusa.org/img/logo.jpg
+下标为：117，名字为：新金山中文学校 英文名字为: Xin_Jin_Shan_Chinese_Language_and_culture_school logo地址: https://i1.wp.com/xjs.vic.edu.au/wp-content/uploads/2017/01/xjslogo.png?fit=152%2C50&ssl=1
+下标为：118，名字为：开普敦中国国际学校 英文名字为: CHINA_INTERNATIONAL_SCHOOL_IN_CAPE_TOWN logo地址: https://static.wixstatic.com/media/5ee8e8_e2859f6819e7489c8a9c365a10dfcae7~mv2.png/v1/fill/w_115,h_115,al_c,q_85,usm_0.66_1.00_0.01/logo.webp
+下标为：119，名字为：博茨瓦纳华文教育辅导中心 英文名字为: 1 logo地址: 1
+下标为：120，名字为：里斯本中文学校 英文名字为: 1 logo地址: 1
+下标为：121，名字为：西班牙华商中文学校 英文名字为: 1 logo地址: 1
+下标为：122，名字为：澳大利亚北大中文学校 英文名字为: 1 logo地址: 1
+下标为：123，名字为：中韩子女教育协会 英文名字为: AKCCE logo地址: 1
+下标为：124，名字为：琴童乐团 英文名字为: 1 logo地址: 1
+下标为：125，名字为：斯图加特汉语学校 英文名字为: Chinesische_Sprachschule_Stuttgart logo地址: https://www.chinesische-sprachschule-stuttgart.de/templates/yootheme/cache/LOGO1-912f2542.png
+下标为：126，名字为：代尔夫特中文学校 英文名字为: SCS-DELFT logo地址: https://scs-delft.nl/wp-content/uploads/cropped-logo2.jpg
+下标为：127，名字为：马德里华苑中文学校 英文名字为: HuaYuan_Education logo地址: https://yt3.ggpht.com/ytc/AKedOLR7MxUFh4LOYsI-hzVE1ZJU_8wbWJVvuZokxOqF=s88-c-k-c0x00ffffff-no-rj
+下标为：128，名字为：热那亚文化宫语言文化艺术中心 英文名字为: 1 logo地址: 1
+下标为：129，名字为：中哥文化教育中心 英文名字为: 1 logo地址: 1
+下标为：130，名字为：德智国际语言学校 英文名字为: littleSagePreSchool logo地址: https://littlesagepreschool.com.sg/wp-content/uploads/2018/10/littlesage_logo.png
+下标为：131，名字为：菲律宾侨中学院 英文名字为: Philippine_Cultural_College logo地址: http://www.pcerc.org/Schools/Images/LOGO/M06.jpg
+下标为：132，名字为：美国行知教育中文学堂 英文名字为: TAO_XINGZHI_ACADEMY logo地址: https://www.taoxingzhiacademy.com/wp-content/uploads/2017/11/taoxingzhi1.png
+下标为：133，名字为：国际教育文化交流学院 英文名字为: 1 logo地址: 1
+下标为：134，名字为：菲律濱晨光中學 英文名字为: PHILIPPINE_CHEN_KUANG_HIGH_SCHOOL logo地址: https://chenkuang.net/wp-content/uploads/2020/09/Chen-kuang-hires-logo.jpg
+下标为：135，名字为：奥克兰华人教育中心 英文名字为: AUCKLAND_AFTERSCHOOL_EDUCATION_CENTER logo地址: https://static.wixstatic.com/media/a2e236_e4a907ad145741d4b0ecd62bdcbdf399~mv2.png/v1/fill/w_160,h_104,al_c,q_85,usm_0.66_1.00_0.01/a2e236_e4a907ad145741d4b0ecd62bdcbdf399~mv2.webp
+下标为：136，名字为：桥梁语言学校 英文名字为: 1 logo地址: 1
+下标为：137，名字为：新西兰N立方教育 英文名字为: 1 logo地址: 1
+下标为：138，名字为：西班牙爱华中文学校 英文名字为: 1 logo地址: http://ch.estudiosdechino.com/wp-content/uploads/2017/04/logo-xindongfang.png
+下标为：139，名字为：犹他州东方中文学校 英文名字为: Oriental_Chinese_School logo地址: 1
+下标为：140，名字为：印尼华文教育联合总会 英文名字为: PERDIKTINDO logo地址: https://yt3.ggpht.com/ytc/AKedOLQi-zSesmy3THcI5eg-BZqdjvtxNM0Rn4Oq74vi=s88-c-k-c0x00ffffff-no-rj
+下标为：141，名字为：加拿大前景中文学校 英文名字为: Promising_International_education_group logo地址: http://www.pieg.org/filespath/images/Banner/20170427023628.png
+下标为：142，名字为：马德里育才现代汉语学校 英文名字为: 1 logo地址: 1
+下标为：143，名字为：華學園 英文名字为: 1 logo地址: http://www.hana-eiyou.ac.jp/assets/img/eiyou/common/logo_pc.png
+下标为：144，名字为：快乐宝贝学校 英文名字为: 1 logo地址: 1
+下标为：145，名字为：比利时欧华汉语语言学校 英文名字为: EuroChine_Chinese_Language_school logo地址: 1
+下标为：146，名字为：伦敦普通话简体字学校 英文名字为: London_Mandarin_School logo地址: http://www.london-mandarin-school.org.uk/images/logo.png
+下标为：147，名字为：匈牙利唐人街华文学校 英文名字为: 1 logo地址: 1
+下标为：148，名字为：荷兰弗里斯兰中文学校 英文名字为: Chinese_school_Friesland logo地址: http://www.chineesonderwijs.nl/sites/all/themes/danat/logo.png
+下标为：149，名字为：千叶县我孙子市若松华文校 英文名字为: 1 logo地址: 1
+下标为：150，名字为：雙溪嶺中嶺學校 英文名字为: 1 logo地址: 1
+下标为：151，名字为：韩国-中国传统文化艺术学院 英文名字为: 1 logo地址: 1
+下标为：152，名字为：克利夫兰当代中文学校 英文名字为: Cleveland_Contemporary_Chinese_Culture_Association logo地址: http://www.cccca.org/images/banners/cccca_logo_thum.gif
+下标为：153，名字为：菲律宾黄炎培职业教育学院 英文名字为: 1 logo地址: 1
+下标为：154，名字为：法国小熊猫学校 英文名字为: 1 logo地址: https://image.qb.chinaqw.com/1/b016c0d5-5490-412f-aa6b-bec7864f51a5.jpg
+下标为：155，名字为：花漾汉语 英文名字为: 1 logo地址: https://youthchinese.net/wp-content/uploads/2018/01/logo.jpg
+下标为：156，名字为：优实国际中文学校 英文名字为: UseABC_International_Chinese_School logo地址: https://img1.wsimg.com/isteam/ip/a3176906-a07a-43e9-9a6b-21684129bb51/%E5%8F%8Clogo.png/:/rs=w:1280
+下标为：157，名字为：西班牙博思语言学校 英文名字为: 1 logo地址: https://yt3.ggpht.com/ytc/AKedOLTmUJ5N0Ry-CJPjqu9-ZVoXHS9AO3NMLwWLaTQjkQ=s88-c-k-c0x00ffffff-no-rj
+下标为：158，名字为：大分中文学园 英文名字为: 1 logo地址: 1
+下标为：159，名字为：缅甸曼德勒福庆语言电脑学校 英文名字为: Confucius_Classroom_at_Fuqing_Language_and_Computer_School_in_Mandalay,Myanmar logo地址: http://ccfq.ynuci.org/sites/all/themes/mdfq/logo.png
+下标为：160，名字为：海尔布隆中文学校 英文名字为: 1 logo地址: 1
+下标为：161，名字为：柬埔寨金边公立崇正学校 英文名字为: HKASUC_CHINESE_ASSOCIATION_IN_CAMBODIA logo地址: https://scontent.fhkg4-1.fna.fbcdn.net/v/t1.6435-9/38760920_2138698129745125_4790101390854717440_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=973b4a&_nc_ohc=urP6CeDZs2AAX9gncTy&_nc_ht=scontent.fhkg4-1.fna&oh=06e88709622e7c3a1cf0e0cd06fe0726&oe=613F86FD
+下标为：162，名字为：睦新中文学校 英文名字为: 1 logo地址: 1
+下标为：163，名字为：大成中文学院 英文名字为: Confucian_Tai_Shing_Primary_School logo地址: https://www.taishingprimary.edu.hk/sites/all/themes/ntemplate/images/logo.png
+下标为：164，名字为：泰国瓦拉亚隆宫皇家大学一带一路学院 英文名字为: Valaya_Rlongkorn_Rajabhat_University logo地址: http://vru.daliuxue.com/public/img/logo.png
+下标为：165，名字为：安华中文学校 英文名字为: Ann-Hua_Chinese_School logo地址: https://www.annhua.org/static/media/uploads/logo.png
+下标为：166，名字为：中巴教育与商贸 英文名字为: 1 logo地址: 1
+下标为：167，名字为：普华三语学校 英文名字为: 1 logo地址: 1
+下标为：168，名字为：意大利树人国际教育 英文名字为: 1 logo地址: 1
+下标为：169，名字为：缅甸国际教育中心（MIEC） 英文名字为: 1 logo地址: 1
+下标为：170，名字为：新华学校 英文名字为: 1 logo地址: https://www.xinhua.edu.mo/images/web/common/logo.png
+下标为：171，名字为：拉省中华会馆中文学校 英文名字为: Chung_Wah_Association logo地址: https://www.chungwah.org.au/wp-content/uploads/2017/08/Chung-Wah-Logo5.png
+下标为：172，名字为：美洲中华中学校 英文名字为: CENTRAL_CHINESE_HIGH_SCHOOL-IN_AMERICA logo地址: https://imgcache.dealmoon.com/thumbimg.dealmoon.com/dealmoon/205/8c3/e27/fa4f5c54049a0ba058553e2.jpg_0_0_40_7983.jpg
+下标为：173，名字为：澳大利亚布里斯本中文学校 英文名字为: BRISBANE_CHINESE_LANGUAGE_SCHOOL logo地址: https://www.bcls.net.au/wp-content/uploads/2020/08/logo-new-cn-2.png
+下标为：174，名字为：新西兰阳光中文学校 英文名字为: 1 logo地址: 1
+下标为：175，名字为：新东方中文艺术学院 英文名字为: Eastern_Art_Academy logo地址: https://static.wixstatic.com/media/5824ed_e3ee9ffdf6924a409ccec8b227b69a4e~mv2_d_2046_2048_s_2.png/v1/crop/x_10,y_0,w_2025,h_2048/fill/w_86,h_87,al_c,q_85,usm_0.66_1.00_0.01/Logo%20Transparent%20R.webp
+下标为：176，名字为：拓广中文补习班 英文名字为: 1 logo地址: 1
+下标为：177，名字为：德国易北中文学校 英文名字为: 1 logo地址: 1
+下标为：178，名字为：俄罗斯华星&诚信华文学校 英文名字为: 1 logo地址: 1
+下标为：179，名字为：广肇学校 英文名字为: Guang_Zhao_School logo地址: https://scontent.fhkg4-1.fna.fbcdn.net/v/t1.18169-9/1379567_231567283668517_1294952952_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=973b4a&_nc_ohc=0lg5dzTh_qQAX8xk5hI&_nc_ht=scontent.fhkg4-1.fna&oh=fbcd25834923f3b2ad21052d1392c919&oe=61406033
+下标为：180，名字为：瑞士日内瓦华文教育基金会 英文名字为: CHINESE_INSTITUE_GENEVA_FOUNDATION logo地址: http://www.ciggeneva.ch/Mop/API/entities.php?module=mop.website.welcome&option=image&opt=-1&ID=-1
+下标为：181，名字为：德国科隆莱茵中原学院 英文名字为: 1 logo地址: 1
+下标为：182，名字为：卡尔斯鲁厄中国文化语言学校 英文名字为: LANGUAGE_INTERNATIONAL logo地址: https://d2sj6gv6213dvd.cloudfront.net/v2/img/logo.png?e=NmVlOWYyYT
+下标为：183，名字为：旅蒙华侨蒙中友谊学校 英文名字为: 1 logo地址: 1
+下标为：184，名字为：咏恩中文学校 英文名字为: 1 logo地址: http://7232931.s21i.faiusr.com/4/ABUIABAEGAAgvZecvgUowPWJJDCGBjj-BQ.png
+下标为：185，名字为：缅甸云华师范学院 英文名字为: 1 logo地址: 1
+下标为：186，名字为：北美青少年联合会 英文名字为: Happy_Youth_Cultural_Exchange_Tour logo地址: https://gotufun.com/wp-content/uploads/2019/09/Capture2.jpg
+下标为：187，名字为：曼德勒育才学校 英文名字为: 1 logo地址: 1
+下标为：188，名字为：西班牙马塔罗纺织中文学校 英文名字为: 1 logo地址: 1
+下标为：189，名字为：荷兰安多芬中文学校 英文名字为: Eindhovense_Chinese_School logo地址: http://hantang.eu/wp-content/uploads/2020/04/cropped-Logo-4.png
+下标为：190，名字为：维也纳中文教育中心 英文名字为: Bildungszentrum_für_chinesische_Sprache_in_Wien logo地址: 1
+下标为：191，名字为：泰國美賽華雲學校 英文名字为: 1 logo地址: 1
+下标为：192，名字为：小太阳三语学校 英文名字为: 1 logo地址: 1
+下标为：193，名字为：爱尔兰华夏博文文化艺术中心 英文名字为: Huaxia_chinese_culture_and_art_center logo地址: http://5b0988e595225.cdn.sohucs.com/images/20200113/9538558eedd848488872e8ce2463a1ac.jpeg
+下标为：194，名字为：新苗文体学校 英文名字为: Hong_Kong_New_Seedling_International_Education_Group logo地址: http://www.nsiceedugrp.org/Public/Uploadfiles/logo.png
+下标为：195，名字为：挪威Lucyya中文学校 英文名字为: 1 logo地址: 1
+下标为：196，名字为：英国依岭中文学校 英文名字为: 1 logo地址: 1
+下标为：197，名字为：雨虹汉学院 英文名字为: Chinees_Instituut_Regenboog_Nijmegen logo地址: https://yt3.ggpht.com/Nx0yLT8P7WDwM9PN-xFEpGzh4ZB0819TkDrVe8ClHXNq-kob6Buk5JI4lxD2nA7lP9cj-5My0Q=s88-c-k-c0x00ffffff-no-rj
+下标为：198，名字为：新中三语学校 英文名字为: Xin_Zhong_school logo地址: https://scontent.fhkg4-1.fna.fbcdn.net/v/t31.18172-8/10387027_604346376346993_4645703309881893720_o.png?_nc_cat=100&ccb=1-5&_nc_sid=973b4a&_nc_ohc=aO5RbawIA2QAX8MZ5c3&_nc_ht=scontent.fhkg4-1.fna&oh=9ae0a9f574a9fab307785cbbd1e3892f&oe=61406CE9
+下标为：199，名字为：陶华教育慈善学校 英文名字为: 1 logo地址: http://www.kobkarn.ac.th/joomla/images/%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99_New3-01.png
 下标为：200，名字为：马耳他中文学校 英文名字为: logo地址: 
 下标为：201，名字为：达理中文学校 英文名字为: logo地址: 
 下标为：202，名字为：德仁中文学校 英文名字为: logo地址: 

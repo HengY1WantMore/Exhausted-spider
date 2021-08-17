@@ -891,7 +891,7 @@
 获取到 https://baike.baidu.com/item/%E6%BD%8D%E5%9D%8A%E6%96%87%E5%8C%96%E8%89%BA%E6%9C%AF%E4%B8%AD%E5%BF%83/8671724 中存在关键字:logo
 获取到 http://www.basilico.cn/ydljs/index_20.aspx?cid=19 中存在关键字:logo
 获取到 http://www.bj.xinhuanet.com/2021-05/20/c_1127470197.htm 中存在关键字:logo
-获取到 http://www.designsociety.cn/cn/index/about/SWCAC 中存在关键字:logo
+    获取到 http://www.designsociety.cn/cn/index/about/SWCAC 中存在关键字:logo
 获取到 https://zh.wikipedia.org/zh-tw/%E6%B5%B7%E4%B8%8A%E4%B8%96%E7%95%8C%E6%96%87%E5%8C%96%E8%89%BA%E6%9C%AF%E4%B8%AD%E5%BF%83 中存在关键字:logo
 ##########################################
 
