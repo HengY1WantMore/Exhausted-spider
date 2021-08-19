@@ -2,7 +2,6 @@ from common import get_multiple_num
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 
-
 browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
 # browser = webdriver.Chrome()
 wait = WebDriverWait(browser, 10)
@@ -17,7 +16,7 @@ class imitation:
         want = []
         info = get_multiple_num(self.location, 1)
         index = info.index(str(self.num))
-        for each in info[index+1:]:
+        for each in info[index + 1:]:
             if str(each)[:2] == '--':
                 break
             else:
@@ -42,6 +41,5 @@ class imitation:
 
 
 if __name__ == '__main__':
-    for x in range(2):
-        x = x + 2
+    for x in range(3):
         imitation('./record.txt', x).operation()

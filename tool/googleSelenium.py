@@ -8,6 +8,8 @@ from common import match_url
 from common import log
 from common import judge_js
 from flashtext import KeywordProcessor
+from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import wait as futures_wait
 
 browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
 # browser = webdriver.Chrome()
@@ -155,6 +157,9 @@ if __name__ == '__main__':
         'sohu',  # 搜狐
         'taobao'
     ]
-    Selenium(2, '淘宝', ['logo', '服装'], 2, white_list, black_list).want_operation()
+    list_info = ['淘宝', '淘宝', '淘宝']
+    for index, each in enumerate(list_info):
+        Selenium(index, each, ['logo', '服装'], 2, white_list, black_list).want_operation()
+
 
 
