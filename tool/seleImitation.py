@@ -2,8 +2,8 @@ from common import get_multiple_num
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 
-browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
-# browser = webdriver.Chrome()
+# browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
+browser = webdriver.Chrome()
 wait = WebDriverWait(browser, 10)
 
 

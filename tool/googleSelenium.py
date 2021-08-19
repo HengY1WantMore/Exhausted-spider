@@ -9,11 +9,11 @@ from common import log
 from common import judge_js
 from flashtext import KeywordProcessor
 from concurrent.futures import ThreadPoolExecutor
-from concurrent.futures import wait as futures_wait
+from concurrent.futures import wait as thread_wait
 
-browser = webdriver.Chrome('/Users/hengyi/Desktop/chromedriver')
-# browser = webdriver.Chrome()
-wait = WebDriverWait(browser, 10)
+
+# executable_path = '/Users/hengyi/Desktop/chromedriver'
+all_info = []
 
 
 class Selenium:
@@ -27,15 +27,20 @@ class Selenium:
         self.length = length  # 默认为筛选的全部
         self.max_times = max_times  # 最大尝试次数
         self.is_open = is_open  # 是否开启代理,默认开启
+        self.protect = []  # 白名单的保护名单（即使打不开任然保存）
+        option = webdriver.ChromeOptions()
+        option.add_argument('headless')  # 设置option
+        self.browser = webdriver.Chrome(options=option)  # 申请一个浏览器
+        self.wait = WebDriverWait(self.browser, 10)  # 浏览器等待时间
 
     def get_all_info(self):  # 模拟浏览器请求
         data = {'keyword': self.key}
         one = str(urlencode(data)).split('=')[1]
-        browser.get('https://www.google.com.hk/search?q=' + one)
+        self.browser.get('https://www.google.com.hk/search?q=' + one)
         time.sleep(2)  # 2秒的休眠给网络一个缓冲时间
-        p = browser.find_elements_by_css_selector('.g')
-        for x in p:
-            content = str(str(x.text).split('\n')).replace('\'', '')
+        p = self.browser.find_elements_by_css_selector('.g')
+        for info_one in p:
+            content = str(str(info_one.text).split('\n')).replace('\'', '')
             url = match_url(content)
             log('./record.txt', f"该网址为：{url} 详细信息为：{content}\n")
         return True
@@ -57,28 +62,32 @@ class Selenium:
         res, real, repeat, final = [], [], [], []
         data = {'keyword': self.key}
         one = str(urlencode(data)).split('=')[1]
-        browser.get('https://www.google.com.hk/search?q=' + one)
+        self.browser.get(f"https://www.google.com.hk/search?q={one}")
         time.sleep(2)  # 2秒的休眠给网络一个缓冲时间
-        text = browser.find_elements_by_xpath("//a")  # 拿到该页所有的链接
-        for each in text:
-            url = each.get_attribute("href")  # 具体链接
+        text = self.browser.find_elements_by_xpath("//a")  # 拿到该页所有的链接
+        for each in text:  # 具体链接
+            url = each.get_attribute("href")
             if not bool(re.search('google', str(url))) and url is not None:
                 res.append(url)
-        for each in res:  # 黑名单筛选
-            if self.filter_url(each, 0):
-                real.append(each)
-        for each in real:  # 重复筛选
+        for each in res:  # 重复筛选
             repeat.append(re.match(r'http.*?//(.*?)/.*?', each, re.M | re.I).group())
         repeat = list(set(repeat))
-        for each in real:
+        for each in res:
             if re.match(r'http.*?//(.*?)/.*?', each, re.M | re.I).group() in repeat:
-                final.append(each)
+                real.append(each)
                 repeat.pop(repeat.index(re.match(r'http.*?//(.*?)/.*?', each, re.M | re.I).group()))
+        for each in real:  # 白黑名单筛选
+            if self.filter_url(each, 1):
+                self.protect.append(each)
+                real.pop(real.index(each))
+        for each in real:
+            if self.filter_url(each, 0):
+                final.append(each)
         return final[:self.length]
 
     def get_each_page(self, url_want, times=1):  # 获取每一页的源码
         if times == self.max_times:
-            log('./error.txt', f"{url_want} 无法请求\n")
+            log('./error.txt', f"{self.index} {self.key}{url_want} 无法请求\n")
             return False
         header = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36'
@@ -99,7 +108,7 @@ class Selenium:
                 else:
                     return self.parse_page(response.text)
             else:
-                log('./error.txt', f"请求非200：{url_want}\n")
+                log('./error.txt', f"{self.index} {self.key} 请求非200：{url_want}\n")
                 return False
         except Exception as e:
             times += 1
@@ -119,32 +128,33 @@ class Selenium:
 
     def get_page_info(self, page_url):  # 处理js渲染的链接
         try:
-            browser.get(page_url)
-            time.sleep(2)  # 2秒的休眠给网络一个缓冲时间
-            text = browser.page_source
+            self.browser.get(page_url)
+            time.sleep(1)  # 2秒的休眠给网络一个缓冲时间
+            text = self.browser.page_source
             return self.parse_page(text)
         except Exception as e:
-            log('./error.txt', f"处理js渲染的链接错误：{page_url}\n")
+            log('./error.txt', f"{self.index} {self.key} 处理js渲染的链接错误：{page_url}\n")
             return False
 
-    def want_operation(self):
-        final_res = []
+    def want_operation(self):  # 单线程主程序
         sort_res = []
-        log('./record.txt', f"{self.index}\n")
         url_array = self.get_url_info()
         for url_handle in url_array:
             res = self.get_each_page(url_handle)
             if res:
                 sort_res.append(url_handle)
-        for sort in sort_res:  # 白名单排序
-            if self.filter_url(sort, 1):
-                final_res.append(sort)
-                sort_res.pop(sort_res.index(sort))
-        for sort in sort_res:
-            final_res.append(sort)
-        for url_handle in final_res:
+        all_info.append([self.index, sort_res, self.protect])
+        log('./record.txt', f"{self.index}\n")
+        for url_handle in sort_res:
             log('./record.txt', f"{url_handle}\n")
+        for url_protect in self.protect:
+            log('./record.txt', f"{url_protect}\n")
         log('./record.txt', f"--##########################################\n")
+
+
+def multithreading(info):
+    Selenium(info['index'], info['key'], info['want'], info['num'], info['withe'], info['black']).want_operation()
+    print(f"下标为：{info['index']}, {info['key']} 完成")
 
 
 if __name__ == '__main__':
@@ -158,8 +168,19 @@ if __name__ == '__main__':
         'taobao'
     ]
     list_info = ['淘宝', '淘宝', '淘宝']
+    executor = ThreadPoolExecutor(max_workers=10)
+    f_list = []
     for index, each in enumerate(list_info):
-        Selenium(index, each, ['logo', '服装'], 2, white_list, black_list).want_operation()
-
-
+        one_info = {
+            'index': index,
+            'key': each,
+            'want': ['logo', '服装'],
+            'num': 2,
+            'withe': white_list,
+            'black': black_list,
+        }
+        future = executor.submit(multithreading, one_info)
+        f_list.append(future)
+    thread_wait(f_list)
+    # 进行重新排序
 
