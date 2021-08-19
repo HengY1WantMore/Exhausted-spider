@@ -1,5 +1,5 @@
 from database import *
-from tool.googleSelenium import *
+# from tool.googleSelenium import *
 from tqdm import tqdm
 
 if __name__ == '__main__':
@@ -8,4 +8,5 @@ if __name__ == '__main__':
     for one in tqdm(name):
         each = one[0]
         Selenium(each, 'logo', 1, 3).main_operation()
+
 
