@@ -65,21 +65,23 @@ if __name__ == '__main__':
         foreign_logo.append(each[0])
     foreign_name = enumerate(foreign_logo)
 
-    # 开始准备插入
-    for index, each in foreign_name:
-        id_index = int(index) + 351
-        if each is None:
-            try:
-                with open(f"./img/{id_index}.jpg", 'rb') as f:
-                    img = f.read()
-                    f.close()
-                    real_image_str = str(img)[2:len(str(img)) - 1]
-                    sql = f"UPDATE `华文教育组织信息表` SET `组织logo` = '{real_image_str}' WHERE `序号` = {id_index}"
-                    db('219.130.114.4', 'user12', 'user12*#21USER', 'user12_db', 9210).operation(sql, '插入logo')
-            except Exception as e:
-                # print(f"{id_index} 错误/不存在")
-                continue
-    print('mission over')
+    # 开始准备插入(错误)
+    # for index, each in foreign_name:
+    #     id_index = int(index) + 351
+    #     if each is None:
+    #         try:
+    #             with open(f"./img/{id_index}.jpg", 'rb') as f:
+    #                 img = f.read()
+    #                 f.close()
+    #                 real_image_str = str(img)[2:len(str(img)) - 1]
+    #                 sql = f"UPDATE `华文教育组织信息表` SET `组织logo` = '{real_image_str}' WHERE `序号` = {id_index}"
+    #                 db('219.130.114.4', 'user12', 'user12*#21USER', 'user12_db', 9210).operation(sql, '插入logo')
+    #         except Exception as e:
+    #             # print(f"{id_index} 错误/不存在")
+    #             continue
+    # print('mission over')
+
+    # 正确应该为： update charge set img = load_file('C:/ProgramData/MySQL/MySQL Server 5.7/Uploads/2.png');
 
     # 处理空格
     # name_list = []

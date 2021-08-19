@@ -1,43 +1,57 @@
-#  Exhausted-spider
+##  Exhausted-spider
 
-- 一位肚皮朝天的的蜘蛛。
- - 爬虫千千万万，我要走属于自己的一条。现在每个网站防御体制不同，只有不断的磨练，才能爬虫学的好。
- - 以上所有内容我都会粗略讲解，在当时肯定能够实现的，如果后面失效，基本的思路不会怎么变的
- - 鄙人一位暨南大学20本科生，在计算机的道路上越走越远。
- - 欢迎私信我，与我交流，2911567026@qq.com邮件先联系
+> 一位肚皮朝天的的蜘蛛。爬虫千千万万，我要走属于自己的一条。
+>
+> 现在每个网站防御体制不同，只有不断的磨练，才能爬虫学的好。
+>
+> 鄙人一位暨南大学20本科生，在计算机的道路上越走越远。
+>
+> 欢迎私信我，与我交流，2911567026@qq.com邮件先联系。
 
 ***
 
-# 介绍
+##   介 绍
 
-### 前言：
+###  前言：
 
-> 为了将每个demo联系起来，采用了仿AOP分层架构，进行了面向对象的再次加工。
-> 
+>  为了将每个demo联系起来，采用了仿AOP分层架构，进行了面向对象的再次加工。
+>
 > 可以将整个项目克隆下来，然后在对应的层直接进行操作。
+>
+> 所有涉及代理，均采用的clash的7890端口，请自己的梯子小改。
 
-### 架构
+##  项目目录
 
-- [业务层](https://github.com/hengyi666/Exhausted-spider/tree/main/control)
-  - 华文处理logo与英文
-  - ...
-- [数据层](https://github.com/hengyi666/Exhausted-spider/tree/main/data)
-  - 华文处理logo与英文
-  - ...
-- [实例层](https://github.com/hengyi666/Exhausted-spider/tree/main/demo)
-  - 抓取今日头条
-  - 抓取微信文章
-  - 抓取每日简报
-  - 抓取猫眼电影Top100
-  - 模拟浏览器抓取淘宝
-- [工具层](https://github.com/hengyi666/Exhausted-spider/tree/main/tool)
-  - 百度百科搜索
-  - 谷歌浏览器搜索
-  - 维基百科搜索
-- [公共库](https://github.com/hengyi666/Exhausted-spider/blob/main/common.py)
-- [数据库](https://github.com/hengyi666/Exhausted-spider/blob/main/database.py)
+>```
+>├─control  // 业务层
+>│  ├─华文logo与名字
+>│  ├─...
+>│
+>├─data  // 数据处理层
+>│  ├─华文logo与文字
+>│  ├─...
+>│
+>├─demo  //示例
+>│  ├─抓取今日头条
+>│  ├─抓取微信文章
+>│  ├─抓取每日简报
+>│  ├─抓取猫眼电影Top100
+>│  └─模拟浏览器抓取淘宝
+>│
+>├─tool // 工具
+>│  ├─font  // 繁体字与简体字的转换
+>│  ├─baiduSearch  // 百度搜索
+>│  ├─googleSelenium  // 谷歌模拟器搜索
+>│  ├─seleImitation  // 模拟器筛选操作
+>│  ├─wikiSearch // 维基百科搜索
+>│
+>├─common 公共层
+>│
+>├─database 数据库操作
+>└─
+>```
 
-### 如何使用
+###  如何使用
 
 > 首先在业务层直接创建对应的任务
 >
@@ -53,23 +67,21 @@
 >
 > 最后达到的效果是根据实际情况快速爬虫
 
-### To Do List：
+###  计划
 
-- 谷歌浏览器搜索支持多个关键词的查询
-- 多线程的优化
+> 刚刚完成，想好了再来写
 
-#  拓展
+##  拓展
 
-> 这里记录的是 运用的第三方库
+- 代理池 https://github.com/Python3WebSpider/ProxyPool
+- 繁体字-简体字互相转换 https://github.com/skydark/nstools/tree/master/zhtools
+- flashtext 寻找关键词 https://github.com/vi3k6i5/flashtext
 
- - 代理池  https://github.com/Python3WebSpider/ProxyPool
+##  库
 
- - 繁体字-简体字互相转换 https://github.com/skydark/nstools/tree/master/zhtools
+```python
+pip install -r requirements.txt
+```
 
- - flashtext 寻找关键词 https://github.com/vi3k6i5/flashtext
 
- - requirements.txt  我把我所有的库都打包了
 
-   ```python
-    pip install -r requirements.txt
-   ```

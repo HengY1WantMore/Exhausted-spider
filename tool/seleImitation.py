@@ -25,10 +25,11 @@ class imitation:
 
     def operation(self):  # 操作浏览器
         url_info = self.get_info()
-        browser.get(url_info[1])
+        browser.get(url_info[0])
         length = len(url_info)
         if length >= 2:
             for each in url_info[1:]:
+                print(each)
                 browser.execute_script(f"window.open('{each}')")
         input_flag = input('完成后请输入1')
         while input_flag != str(1):
@@ -42,4 +43,4 @@ class imitation:
 
 if __name__ == '__main__':
     for x in range(3):
-        imitation('./record.txt', x).operation()
+        imitation('./record_sort.txt', x).operation()

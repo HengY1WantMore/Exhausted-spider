@@ -11,7 +11,6 @@ from flashtext import KeywordProcessor
 from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures import wait as thread_wait
 
-
 # executable_path = '/Users/hengyi/Desktop/chromedriver'
 all_info = []
 
@@ -143,7 +142,7 @@ class Selenium:
             res = self.get_each_page(url_handle)
             if res:
                 sort_res.append(url_handle)
-        all_info.append([self.index, sort_res, self.protect])
+        all_info.append({'index': self.index, 'res': sort_res, 'protect': self.protect})
         log('./record.txt', f"{self.index}\n")
         for url_handle in sort_res:
             log('./record.txt', f"{url_handle}\n")
@@ -157,8 +156,22 @@ def multithreading(info):
     print(f"下标为：{info['index']}, {info['key']} 完成")
 
 
+# 希尔排序
+def shellSort(all_info_list):
+    length = len(all_info_list)
+    gap = length // 2
+    while gap >= 1:
+        for i in range(length):
+            j = i
+            while j >= gap and all_info_list[j - gap]['index'] > all_info_list[j]['index']:  # 在每一组里面进行直接插入排序
+                all_info_list[j], all_info_list[j - gap] = all_info_list[j - gap], all_info_list[j]
+                j -= gap
+        gap = gap // 2  # 更新步长
+    return all_info_list
+
+
 if __name__ == '__main__':
-    # 默认黑白名单
+    # 参数模块
     white_list = [
         'facebook',  # 脸书
         'youtube'  # 油管
@@ -167,20 +180,36 @@ if __name__ == '__main__':
         'sohu',  # 搜狐
         'taobao'
     ]
-    list_info = ['淘宝', '淘宝', '淘宝']
-    executor = ThreadPoolExecutor(max_workers=10)
+    length = None
+    is_open = 1
+    max_times = 3
+    # 列表模块
+    list_info = ['俄罗斯中华文化教育促进会', '阿根廷华文教育基金会', '南非中文教师协会', '中韩子女教育协会', '德国华达中文学校', '内卡河畔华文学堂', '全美中文学校协会']
+    print('Mission Start')
+    executor = ThreadPoolExecutor(max_workers=5)
     f_list = []
-    for index, each in enumerate(list_info):
+    for index, each_index in enumerate(list_info):
         one_info = {
             'index': index,
-            'key': each,
-            'want': ['logo', '服装'],
-            'num': 2,
+            'key': each_index,
+            'want': ['logo'],
+            'num': 1,
             'withe': white_list,
             'black': black_list,
+            'length': length,
+            'is_open': is_open,
+            'max_times': max_times,
         }
         future = executor.submit(multithreading, one_info)
         f_list.append(future)
     thread_wait(f_list)
     # 进行重新排序
-
+    all_info = shellSort(all_info)
+    for each_one in all_info:
+        log('./record_sort.txt', f"{each_one['index']}\n")
+        for url_handle in each_one['res']:
+            log('./record_sort.txt', f"{url_handle}\n")
+        for url_protect in each_one['protect']:
+            log('./record_sort.txt', f"{url_protect}\n")
+        log('./record_sort.txt', f"--##########################################\n")
+    print('Mission Over')
