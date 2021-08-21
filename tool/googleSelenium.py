@@ -27,9 +27,10 @@ class Selenium:
         self.max_times = max_times  # 最大尝试次数
         self.is_open = is_open  # 是否开启代理,默认开启
         self.protect = []  # 白名单的保护名单（即使打不开任然保存）
-        option = webdriver.ChromeOptions()
-        option.add_argument('headless')  # 设置option
-        self.browser = webdriver.Chrome(options=option)  # 申请一个浏览器
+        # option = webdriver.ChromeOptions()
+        # option.add_argument('headless')  # 设置option
+        # self.browser = webdriver.Chrome(options=option)  # 申请一个浏览器
+        self.browser = webdriver.Chrome()  # 申请一个浏览器
         self.wait = WebDriverWait(self.browser, 10)  # 浏览器等待时间
 
     def get_all_info(self):  # 模拟浏览器请求
@@ -57,7 +58,7 @@ class Selenium:
                     return True
             return False
 
-    def get_url_info(self):  # 谷歌搜索页面存在的有效链接
+    def get_url_info(self):  #
         res, real, repeat, final = [], [], [], []
         data = {'keyword': self.key}
         one = str(urlencode(data)).split('=')[1]

@@ -4,11 +4,12 @@ from tqdm import tqdm
 if __name__ == '__main__':
     # 参数设置
     white_list = ['facebook', 'youtube']
-    black_list = ['sohu', 'taobao']
+    black_list = ['sohu']
     length = None
     is_open = 1
     max_times = 3
-    list_info = ['俄罗斯中华文化教育促进会', '阿根廷华文教育基金会', '南非中文教师协会', '中韩子女教育协会', '德国华达中文学校', '内卡河畔华文学堂', '全美中文学校协会']
+    # list_info = ['俄罗斯中华文化教育促进会', '阿根廷华文教育基金会', '南非中文教师协会', '中韩子女教育协会', '德国华达中文学校', '内卡河畔华文学堂', '全美中文学校协会']
+    list_info = ['淘宝', '京东', '淘宝', '京东', '淘宝', '京东']
     # 开始任务
     print('Mission Start')
     executor = ThreadPoolExecutor(max_workers=5)
@@ -17,8 +18,8 @@ if __name__ == '__main__':
         one_info = {
             'index': index,
             'key': each_index,
-            'want': ['logo'],
-            'num': 1,
+            'want': ['logo', '服装'],
+            'num': 2,
             'withe': white_list,
             'black': black_list,
             'length': length,
