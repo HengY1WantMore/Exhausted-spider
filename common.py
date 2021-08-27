@@ -236,3 +236,15 @@ def judge_js(text):
         return True
     else:
         return False
+
+
+# @description: 文件转为字节流
+# @Author: Hengyi
+# @Date: 2021-08-26
+# @Param: filename：位置
+# @Return: binaryData：二进制
+def convertToBinaryData(filename):
+    # Convert digital data to binary format
+    with open(filename, 'rb') as file:
+        binaryData = file.read()
+    return binaryData

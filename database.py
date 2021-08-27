@@ -54,3 +54,12 @@ class db:
             return num
         except pymysql.Error as e:
             print(f"{describe} 操作错误", e)
+    
+    def blob(self, sql, param, describe):  # 插入blob
+        try:
+            cur = self.connect()
+            num = cur.execute(sql, param)
+            self.conn.commit()
+            return num
+        except pymysql.Error as e:
+            print(f"{describe} 操作错误", e)
