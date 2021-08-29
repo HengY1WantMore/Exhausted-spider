@@ -74,6 +74,7 @@ class baidu:
             self.res['外文名'] = self.res['外文名'].replace(' ', '')
             return self.res
 
+        
     def parse_page(self):  # 分析页面(主方法)
         page = self.get_page()
         doc = pq(page)
