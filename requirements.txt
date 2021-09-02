@@ -26,7 +26,6 @@ itemadapter==0.3.0
 itemloaders==1.0.4
 jmespath==0.10.0
 jwt==1.2.0
-lxml @ file:///E:/pythonProject/%E5%BA%93/lxml-4.6.3-cp39-cp39-win_amd64.whl
 openpyxl==3.0.7
 parsel==1.6.0
 pefile==2021.5.24
@@ -53,7 +52,6 @@ six==1.16.0
 smmap==4.0.0
 soupsieve==2.2.1
 termcolor==1.1.0
-Twisted @ file:///E:/pythonProject/%E5%BA%93/Twisted-20.3.0-cp39-cp39-win_amd64.whl
 urllib3==1.26.6
 w3lib==1.22.0
 xlrd==2.0.1
