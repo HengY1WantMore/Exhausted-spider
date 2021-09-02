@@ -6,7 +6,7 @@ Python 编写的进行数据筛选与收集工具。
 ##  快速部署
 ```bash
 # git下载
-$ git clone 
+$ git clone https://github.com/hengyi666/Exhausted-spider.git
 ```
 ##  快速上手
 
