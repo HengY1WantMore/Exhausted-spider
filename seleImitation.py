@@ -14,12 +14,13 @@
 """
 
 import json
-from common import get_multiple_num
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-
-browser = webdriver.Chrome()
+option = webdriver.ChromeOptions()
+option.add_experimental_option("excludeSwitches", ["enable-logging"])
+browser = webdriver.Chrome(options=option)
 wait = WebDriverWait(browser, 10)
+
 
 
 class imitation:
@@ -53,7 +54,10 @@ class imitation:
 
 
 if __name__ == '__main__':
-    location = './record/record.json'
-    res = json.load(open(location, 'r', encoding='utf-8'))
-    for x in range(len(res)):
-        imitation(res[x]).operation()
+    try:
+        location = './record/record.json'
+        res = json.load(open(location, 'r', encoding='utf-8'))
+        for x in range(len(res)):
+            imitation(res[x]).operation()
+    except Exception as e:
+        print("Don't forget to change the format")
