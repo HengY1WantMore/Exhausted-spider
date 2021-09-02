@@ -113,7 +113,7 @@ if not os.path.exists(path):
 new_list = []
 if args.batch:
     all_list = ['key', 'want', 'black_domain', 'black_want']
-    for x in json.load(open(args.batch, 'r', encoding='utf-8')):
+    for x in json.load(open(args.batch, 'r', encoding='gbk')):
         new_dic = dict()
         new_dic['black_want_flag'] = False
         for k, v in x.items():
@@ -151,6 +151,7 @@ if args.batch:
             f_list.append(future)
         thread_wait(f_list)
         print('- Multithreaded task completed')
+        print(f"- Please go to the {args.record} to view the results")
         sys.exit(0)
 
 # 针对单一任务
