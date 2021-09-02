@@ -50,12 +50,12 @@ class imitation:
 
 if __name__ == '__main__':
     try:
+        res = json.load(open(location, 'r', encoding='utf-8'))
         option = webdriver.ChromeOptions()
         option.add_experimental_option("excludeSwitches", ["enable-logging"])
         browser = webdriver.Chrome(options=option)
         wait = WebDriverWait(browser, 10)
         location = './record/record.json'
-        res = json.load(open(location, 'r', encoding='utf-8'))
         for x in range(len(res)):
             imitation(res[x]).operation()
     except Exception as e:
