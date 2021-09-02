@@ -9,7 +9,7 @@ batch_flag = False
 
 parser = argparse.ArgumentParser(
     description='This is a tool for searching keywords to find specified urls',
-    epilog='Source on GitHub: https://github.com/SO-JNU/stuhealth\nLicense: GNU GPLv3\nAuthor: Akarin',
+    epilog='Source on GitHub: https://github.com/hengyi666/Exhausted-spider\nAuthor: Hengyi',
     formatter_class=argparse.RawTextHelpFormatter
 )
 parser.add_argument(
