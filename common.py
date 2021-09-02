@@ -8,7 +8,6 @@ from selenium.webdriver.support.wait import WebDriverWait
 import openpyxl
 import xlrd
 import requests
-# from tool.font.langconv import Converter
 from flashtext import KeywordProcessor
 
 '''
@@ -130,19 +129,6 @@ def handleNum(text):
             a = 0
             container = ''
     res = '\n'.join(res)
-    return res
-
-
-# @description: 处理繁体字转简体字
-# @Author: Hengyi
-# @Date: 2021/8/6
-# @Param: sentence:内容
-# @Return: string
-def handleText(sentence):
-    res = []
-    for x in sentence:
-        x = str(Converter('zh-hans').convert(x))
-        res.append(x)
     return res
 
 

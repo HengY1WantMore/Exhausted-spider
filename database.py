@@ -14,7 +14,8 @@ class db:
 
     def connect(self):  # 链接数据库
         try:
-            self.conn = pymysql.Connect(host=self.host, user=self.user, passwd=self.pwd, db=self.db, port=int(self.port),
+            self.conn = pymysql.Connect(host=self.host, user=self.user, passwd=self.pwd, db=self.db,
+                                        port=int(self.port),
                                         charset='utf8')
             cursor = self.conn.cursor()
             print("数据库链接成功")
@@ -54,7 +55,7 @@ class db:
             return num
         except pymysql.Error as e:
             print(f"{describe} 操作错误", e)
-    
+
     def blob(self, sql, param, describe):  # 插入blob
         try:
             cur = self.connect()
