@@ -83,8 +83,9 @@ $ python3 spider-main.py -b demo.json
 
 - 信息按照以下格式示例保存为 JSON 文件：
 
-```json
-[{
+```
+[
+{
   "0": { "key": {"0": "华为","1": "加密"},
         "black_domain": {"0": "sohu.com","1": "xinlang.com"},
     	"black_want" :{"0": "歌手","1": "演员"}
@@ -92,7 +93,8 @@ $ python3 spider-main.py -b demo.json
   "1": {"key": {"0": "华为","1": "加密"},
         "black_domain": {"0": "sohu.com","1": "xinlang.com"},
     	"black_want" :{"0": "歌手","1": "演员"}
-}]
+}
+]
 ```
 
 - 处理完后，请到默认保存路径的`./record/record.json`下
