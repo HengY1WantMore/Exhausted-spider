@@ -154,6 +154,7 @@ class Selenium:
                     info['url'] = dict(enumerate(sort_res))
                 print(f"The Mission {info['source']} page: {info['page']} is done")
                 log(self.record, str(json.dumps(info, ensure_ascii=False) + ',\n'))
+        self.browser.quit()
 
 
 def thread_find(each, max_times, port, is_open, ip, pages, record):
