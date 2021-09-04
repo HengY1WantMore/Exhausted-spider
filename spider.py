@@ -160,6 +160,7 @@ class Selenium:
                     log(self.record, str(json.dumps(info, ensure_ascii=False) + ',\n'))
                 else:
                     continue
+        self.browser.quit()
 
 
 def thread_find(each, max_times, port, is_open, ip, pages, record):

@@ -75,7 +75,7 @@ parser.add_argument(
     '-r',
     '--record',
     required=False,
-    default='./record/record.json',
+    default='./record/record1.json',
     type=str,
     help='Write record to the specified path.'
 )
@@ -113,13 +113,13 @@ if not os.path.exists(path):
 new_list = []
 if args.batch:
     all_list = ['key', 'want', 'black_domain', 'black_want']
-    for x in json.load(open(args.batch, 'r', encoding='gbk')):
+    for x in json.load(open(args.batch, 'r', encoding='utf-8')):
         new_dic = dict()
         new_dic['black_want_flag'] = False
         for k, v in x.items():
             for key, value in v.items():
-                if key in all_list:
-                    new_dic[key] = value
+                if k in all_list:
+                    new_dic[k] = v
                 if key == 'key' or 'want':
                     batch_flag = True
                 if key == 'black_want':
