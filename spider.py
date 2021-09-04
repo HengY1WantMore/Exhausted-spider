@@ -141,7 +141,10 @@ class Selenium:
                 info['page'] = x + 1
                 info['url'] = dict(enumerate(url_array))
                 print(f"The Mission {info['source']} page: {info['page']} is done")
-                log(self.record, str(json.dumps(info, ensure_ascii=False) + ',\n'))
+                if info['url'] != {}:
+                    log(self.record, str(json.dumps(info, ensure_ascii=False) + ',\n'))
+                else:
+                    continue
             else:
                 sort_res = []
                 for url_handle in url_array:
@@ -153,7 +156,10 @@ class Selenium:
                     info['page'] = x + 1
                     info['url'] = dict(enumerate(sort_res))
                 print(f"The Mission {info['source']} page: {info['page']} is done")
-                log(self.record, str(json.dumps(info, ensure_ascii=False) + ',\n'))
+                if info['url'] != {}:
+                    log(self.record, str(json.dumps(info, ensure_ascii=False) + ',\n'))
+                else:
+                    continue
 
 
 def thread_find(each, max_times, port, is_open, ip, pages, record):
@@ -163,7 +169,7 @@ def thread_find(each, max_times, port, is_open, ip, pages, record):
         value = each['key']
         for k, v in value.items():
             key_str += v
-        search_way = 'allinanchor:' + key_str
+        search_way = key_str
     elif 'want' in each.keys() and 'key' not in each.keys():
         want_str = ''
         value = each['want']

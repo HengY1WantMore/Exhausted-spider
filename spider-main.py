@@ -159,7 +159,7 @@ search_way = ''
 # 处理关键词  情况一： 只存在标题关键词
 if args.key and args.want is None:
     key_str = str(args.key).replace(',', '')
-    search_way = 'allinanchor:' + key_str
+    search_way = key_str
 # 处理关键词  情况二： 只存在内容关键词
 elif args.want and args.key is None:
     want_str = str(args.want).replace(',', '')
