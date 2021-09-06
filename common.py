@@ -234,3 +234,13 @@ def convertToBinaryData(filename):
     with open(filename, 'rb') as file:
         binaryData = file.read()
     return binaryData
+    
+
+# @description: 数组切片
+# @Author: Hengyi
+# @Date: 2021-09-04
+# @Param: items 数组
+# @Param: n 倍数
+# @Return: array：数组
+def list_split(items, n):
+    return [items[i:i+n] for i in range(0, len(items), n)]
