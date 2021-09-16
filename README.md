@@ -1,6 +1,5 @@
 # 信息收集爬虫框架
 
-[![build](https://github.com/SO-JNU/stuhealth/workflows/build/badge.svg)](https://github.com/SO-JNU/stuhealth/actions)
 
 Python 编写的进行数据筛选与收集工具。
 ##  快速部署
