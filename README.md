@@ -2,6 +2,8 @@
 
 
 Python 编写的进行数据筛选与收集工具。
+![](https://img.shields.io/badge/%E6%81%92%E6%AF%85-hengyi666-orange)
+
 ##  快速部署
 ```bash
 # git下载
